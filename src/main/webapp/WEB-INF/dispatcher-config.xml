@@ -18,12 +18,12 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <bean class="com.example.webapp.dao.UserDao">
+    <bean class="com.example.demo.dao.UserDao">
         <property name="jdbcTemplate" ref="jdbcTemplate" />
     </bean>
 
-    <bean class="com.example.webapp.service.UserService" />
+    <bean class="com.example.demo.service.UserService" />
 
-    <context:component-scan base-package="com.example.webapp" />
+    <context:component-scan base-package="com.example.demo" />
 
 </beans>
